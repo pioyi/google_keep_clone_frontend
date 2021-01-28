@@ -1,0 +1,51 @@
+.note__container {
+    padding: 25px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--soft-dark);
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notes__container {
+    margin-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.notes__container > div {
+    width: 250px;
+} 
+
+.heart {
+    color: var(--heart);
+}
+
+.note__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.note__content {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.note__container:hover .note__footer {
+    display: flex;
+}
+
+.note__footer {
+    margin-top: 25px;
+    display: flex;
+    display: none;
+}
+
+.note__footer__item:first-child {
+    margin-right: 8px;
+}

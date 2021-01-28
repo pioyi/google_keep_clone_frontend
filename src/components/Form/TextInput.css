@@ -1,0 +1,43 @@
+form input, form textarea {
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    margin-top: 0.5em;
+    font-size: 12px;
+    width: 100%;
+    transition: background-color 100ms;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 2px solid var(--submit);
+    background-color: var(--submit-bg);
+}
+
+.form__control.error input, .form__control.error textarea {
+    border: 2px solid var(--error);
+    background-color: var(--error-bg);
+}
+
+.form__control.error label {
+    color: var(--error);
+}
+
+.form__control {
+    margin-bottom: 1.6em;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.form__page button {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100% !important;
+    height: 100px !important;
+}

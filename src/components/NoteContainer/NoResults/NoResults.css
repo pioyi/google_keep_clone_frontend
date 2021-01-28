@@ -1,0 +1,25 @@
+.no__results {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 36px;
+}
+
+.no__results svg {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.no__results__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no__results p {
+    margin-top: 10px;
+    max-width: 250px;
+}

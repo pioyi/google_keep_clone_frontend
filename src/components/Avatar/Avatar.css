@@ -1,0 +1,15 @@
+.avatar__container {
+    min-width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.avatar__container p {
+    color: white;
+    font-size: 14px;
+}

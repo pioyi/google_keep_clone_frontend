@@ -1,0 +1,70 @@
+header {
+    background-color: var(--navbar-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 40px;
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+}
+
+.brand {
+    font-size: 18px;
+}
+
+.flex__container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__links > * {
+    margin-left: 16px;
+}
+
+svg {
+    color: var(--icons-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.youtube__logo {
+    height: 20px;
+    margin-left: 34px;
+}
+
+@media (max-width: 870px) {
+    .brand, .github {
+        display: none;
+    }
+
+    #searchbar input {
+        width: 100%;
+    }
+
+    #searchbar {
+        flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .page__layout {
+        flex-direction: column;
+    }
+
+    .page__layout .notes__container > div {
+        width: 100%;
+    }
+
+    .notes__container {
+        margin: 30px 0;
+    }
+}

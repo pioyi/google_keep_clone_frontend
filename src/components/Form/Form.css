@@ -1,0 +1,30 @@
+.form__page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__container {
+    max-width: 350px;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.form__title {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.form__description {
+    color: grey;
+    margin: 0.7em 0 2.5em 0;
+    font-size: 12px;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
