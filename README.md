@@ -1,6 +1,6 @@
 # Google Keep Clone Frontend
 
-This project was created using React's typescript template. <br />
+Created using React's typescript template. <br />
 You can view the [backend](https://github.com/pioyi/google_keep_clone_backend) code here
 
 <br />
