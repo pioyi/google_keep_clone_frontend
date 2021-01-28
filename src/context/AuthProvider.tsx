@@ -22,10 +22,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             })
                 .then(res => {
                     setUserData(res.data)
-                    setLoading(false)
                 })
-                .catch(err => setLoading(false))
+                .catch(err => console.log(err.response))
         }
+        setLoading(false)
     }, [])
 
     const login = (data: TokenData) => {
