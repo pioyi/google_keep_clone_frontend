@@ -1,6 +1,6 @@
-import axios from "axios"
 import React, { useState, useEffect } from "react"
 import Spinner from "../components/Spinner"
+import parseToken from "../utils/parseToken"
 import { AuthContext, TokenData } from "./AuthContext"
 
 interface AuthProviderProps {
@@ -12,20 +12,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const [loading, setLoading ] = useState(true)
 
     useEffect(() => {
-        const token = localStorage.getItem("google_keep_clone_token")
-
-        if (token) {
-            axios.get<TokenData>("/auth/parseToken", {
-                headers: {
-                    google_keep_clone_token: token
-                }
-            })
-                .then(res => {
-                    setUserData(res.data)
-                })
-                .catch(err => console.log(err.response))
-        }
-        setLoading(false)
+        parseToken(setLoading, setUserData)
     }, [])
 
     const login = (data: TokenData) => {
